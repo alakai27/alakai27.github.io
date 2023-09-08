@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+	<head>
+		<title>HNGx Task 1</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+	<div class="webpage">
+	<h1> Good day!</h1>
+	<hr>
+	
+	<p>This is</p>
+		<div class="text" data-testid="slackUserName"><h2>ash_xne</h2></div>
+	
+		<p> My username has been stated above. I am a university student that is currently an HNG intern and is focused on gaining experience and meeting new people. You can find my details below.</p>
+	
+		<p data-testid="myTrack">My track is Frontend Development.</p>
+	
+	<script>
+		function displayUTCTime() {
+		  var currentTime = new Date();
+		  var utcMilliseconds = currentTime.getTime();
+		  
+		  document.getElementById("utc-time").textContent = utcMilliseconds.toString();
+		}
+		setInterval(displayUTCTime, 1000);
+	</script>
+	
+	<p id="utc-time" data-testid="currentUTCTime">UTC Time in milliseconds.</p>
+	
+	<p>Above is the current UTC time in milliseconds.</p>
+	
+	<script>
+		function displayDayOfWeek() {
+		  var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+		  var currentTime = new Date();
+		  var dayIndex = currentTime.getDay();
+		  var currentDayOfWeek = daysOfWeek[dayIndex];
+		  
+		  document.getElementById("day-of-week").textContent = currentDayOfWeek;
+		}
+		
+		// Update the day of the week every second
+		setInterval(displayDayOfWeek, 1000);
+	</script>
+
+	<p id="day-of-week" data-testid="currentDayOfTheWeek">Current Day</p>
+	
+	<p>The day is shown above.</p>
+
+	<p> My slack profile picture is as shown below. </p>
+	
+	<img src="colour wheel genshin.jpeg" alt="ash_xne" data-testid="slackDisplayImage">
+	
+	<p> The GitHub source code can be found <a href="https://github.com/ashexne/HNGx-Task-1.git" data-testid="githubURL">here</a>. </p>
+
+	</div>
+
+	</body>
+</html>
