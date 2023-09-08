@@ -1,0 +1,16 @@
+*{
+	margin: 1;
+	padding: 0;
+	font-family: "poppins", Times New Roman;
+	box-sizing: border-box;
+}
+.webpage{
+	background:#66b3b0;
+}
+.webpage img{
+	width: 25%;
+	height: 25%;
+}
+.text{
+	color: blueviolet;
+}
